@@ -1,0 +1,939 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    /*-----LOGO / LISTA-----*/
+
+    .close {
+        transform: translateX(100%); 
+    }
+
+    .show {
+        transform: translateX(0); 
+    }
+
+    .opcoes_menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .container {
+        display: block;
+        width: 100%;
+        height: 113px;
+    }
+
+    .menu_principal {
+        width: 100%;
+        height: 113px;
+        background-color: #01203A;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        box-shadow: 5px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    }
+
+    .logo img {
+        height: 90px;
+        width: 90px;
+        opacity: 0.8;
+    }
+
+    .logo img:hover {
+        opacity: 1;
+    }
+
+    .lista {
+        list-style: none;
+        color: white;
+        display: flex;
+    }
+
+    .lista li {
+        margin-left: 18px;
+        position: relative;
+        text-transform: uppercase;
+        cursor: pointer;
+        padding: 0 3px;
+    }
+
+    .lista li:after {
+        content: "";
+        position: absolute;
+        background-color: #00BFA6;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        border-radius: 8px;
+        transition: 0.5s;
+    }
+
+    .active, .lista li:hover {
+        color: #00BFA6;
+    }
+
+    .lista li:hover:after {
+        width: 100%;
+        color: #00BFA6;
+    }
+
+    .mobile_menu {
+        display: none;
+        cursor: pointer;
+    }
+
+    .mobile_menu div {
+        width: 32px;
+        height: 2px;
+        background-color: aliceblue;
+        margin: 8px;
+    }
+
+    /*-----FIM LOGO / LISTA-----*/
+
+    /*-----ICONES-----*/
+
+    .icones_geral {
+        display: flex;
+    }
+
+    .icones_geral a {
+        height: 40px;
+        width: 40px;
+        margin-left: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid 2px #00BFA6;
+        border-radius: 50%;
+        font-size: 25px;
+        color: #00BFA6;
+        transition: color 0, 5s;
+        text-decoration: none;
+    }
+
+    .icones_geral a:hover {
+        background-color: #00BFA6;
+        color: #01203A;
+    }
+
+    /*-----FIM ICONES-----*/
+
+    /*-----CORPO DO SITE-----*/
+
+    /*-----HOME-----*/
+
+    .home_principal {
+        width: 100%;
+        height: 720px;
+        background: #01203A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .corpo_home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto_home h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 470px;
+        width: 480px;
+        
+        font-size: 75px;
+        color: white;
+        margin-right: 100px;
+        letter-spacing: 1px;
+    }
+
+    .img_home img {
+        width: 720px;
+        height: 419px;
+    }
+
+    /*-----FIM HOME-----*/
+
+    /*-----SOBRE-----*/
+
+    .sobre {
+        width: 100%;
+        height: 560px;
+        background-color: #00BFA6;
+    }
+
+    .titulo_sobre {
+        text-align: center;
+        font-size: 45px;
+        padding: 15px 0px;
+        color: #01203A;
+    }
+
+    .corpo_sobre {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .texto_sobre li {
+        color: #01203A;
+        font-size: 25px;
+        list-style: none;
+        width: 600px;
+        padding-bottom: 25px;
+    }
+
+    .img_sobre img {
+        width: 750px;
+        height: 400px;
+    }
+
+    /*-----FIM SOBRE-----*/
+
+    /*-----O QUE FAZEMOS-----*/
+
+    .o_oqf {
+        width: 100%;
+        height: 1000px;
+        background-color: #01203A;
+    }
+
+    .titulo_oqf {
+        text-align: center;
+        font-size: 45px;
+        padding: 28px 0px 45px 0px;
+        color: #00BFA6;
+        text-transform: uppercase;
+    }
+
+    .parte_01 {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .texto_oqf_01 h3 {
+        color: aliceblue;
+        font-size: 30px;
+        padding-bottom: 25px;
+        text-transform: uppercase;
+    }
+
+    .texto_oqf_01{
+        padding-left: 50px;
+    }
+
+    .texto_oqf_01 li {
+        color: aliceblue;
+        font-size: 150%;
+        padding-bottom: 20px;
+    }
+
+    .img_oqf_01 img {
+        width: 560px;
+        height: 410px;
+        padding-left: 80px;
+    }
+
+    .parte_02 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 38px;
+    }
+
+    .texto_oqf_02 h3 {
+        color: aliceblue;
+        font-size: 30px;
+        text-transform: uppercase;
+        padding-bottom: 25px;
+    }
+
+    .texto_oqf_02 li {
+        color: aliceblue;
+        font-size: 150%;
+        padding-bottom: 20px;
+    }
+
+    .img_oqf_02 img {
+        width: 570px;
+        height: 340px;
+        padding-right: 100px;
+    }
+
+    /*-----FIM O QUE FAZEMOS-----*/
+
+    /*-----PORTIFÓLIO------*/
+
+    .portifolio {
+        height: 895px;
+        width: 100%;
+        background-color: #00BFA6;
+    }
+
+    .titulo_portifolio h2 {
+        text-align: center;
+        font-size: 57px;
+        padding: 15px 0px 9px 0px;
+        color: #01203A;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .texto_portifolio p {
+        display: flex;
+        justify-content: center;
+        color: #01203A;
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+
+    .projetos_portifolio img {
+        height: 300px;
+        padding: 20px;
+        border-radius: 2.3pc;
+    }
+
+    .but {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .btn {
+        width: 250px;
+        height: 60px;
+        border-radius: 10px;
+        border: 0px;
+        box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.25);
+        background-color: rgba(1, 32, 58, 1);
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        cursor: pointer;
+    }
+
+    .tipo_01 {
+        text-align: center;
+    }
+
+    .tipo_02 {
+        text-align: center;
+    }
+
+    .tipo_03 {
+        text-align: center;
+    }
+
+    .tipo_04 {
+        text-align: center;
+    }
+
+    .projetos_portifolio img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .projetos_portifolio {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .projetos_portifolio>div {
+        flex: 1 1 330px;
+    }
+
+    /*-----FIM PORTIFÓLIO-----*/
+
+    /*-----CONTATO-----*/
+
+    .contato {
+        background-color: #01203A;
+        width: 100%;
+        height: 540px;
+    }
+
+    .corpo_contato {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contato_wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .titulo_contato h2 {
+        text-align: center;
+        font-size: 64px;
+        padding: 15px 0px 40px 10px;
+        color: #00BFA6;
+        text-transform: uppercase;
+    }
+
+    .corpo_contato form {
+        margin-right: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .corpo_contato form input {
+        width: 100%;
+        height: 45px;
+        background-color: rgba(243, 250, 255, 0.93);
+        font-size: 17px;
+        outline: 0;
+        border: 0;
+        padding-left: 10px;
+        padding-left: 10px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .corpo_contato form textarea {
+        width: 500px;
+        padding-top: 10px;
+        padding-left: 10px;
+        font-size: 17px;
+        background-color: rgba(243, 250, 255, 0.93);
+        border-radius: 5px;
+        border: none;
+        outline: 0;
+        margin-bottom: 15px;
+    }
+
+    .corpo_contato button {
+        height: 50px;
+        width: 500px;
+        font-size: 20px;
+        background-color: rgba(0, 191, 166, 1);
+        color: #01203A;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .corpo_contato button:hover {
+        background-color: rgba(16, 214, 188, 1);
+    }
+
+    .mapa {
+        padding-left: 10px;
+        border-radius: 5px;
+        align-items: center;
+    }
+
+    .mapa iframe {
+        border-radius: 10px;
+    }
+
+    iframe {
+        width: 600px;
+        height: 350px;
+        border: none;
+    }
+
+    /*-----FIM CONTATO-----*/
+
+    /*-----FOOTER-----*/
+
+    .footer {
+        height: 300px;
+        width: 100%;
+        background-color: #001322;
+        box-shadow: 5px 2px 4px 1px rgba(0, 0, 0, 0.60);
+    }
+
+    .container_footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 284px;
+    }
+
+    .img_footer img {
+        height: 200px;
+        width: 200px;
+        margin: 0px 55px;
+        cursor: pointer;
+
+    }
+
+    .item-left {
+        height: 210px;
+        border-right: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 60px;
+    }
+
+    .item-left h2,
+    h3,
+    p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        margin: 10px;
+    }
+
+    .item-left h2 {
+        color: #00BFA6;
+    }
+
+    .item-right {
+        height: 210px;
+        border-left: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 60px;
+    }
+
+    .item-higth h2,
+    h3,
+    p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        margin: 10px;
+    }
+
+    .item-right h2 {
+        color: #00BFA6;
+        padding-bottom: 10px;
+    }
+
+    .copyright {
+        height: 40px;
+        width: 100%;
+        background-color: #01203A;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*-----FIM FOOTER-----*/
+
+    /*-----BOTÃO VOLTAR AO TOPO DO SITE */
+
+    .scrollButton {
+        display: none;
+        position: fixed;
+        text-align: center;
+        line-height: 70px;
+        font-size: 35px;
+        bottom: 20px;
+        right: 20px;
+        height: 70px;
+        width: 70px;
+        border-radius: 35px;
+        color: white;
+        background-color: #325a7a;
+        z-index: 100;
+        cursor: pointer;
+    }
+
+    /*-----FIM DO BOTÃO-----*/
+
+    /*-----FIM CORPO DO SITE-----*/
+
+    /*-----RESPONSIVO-----*/
+
+    @media screen and (max-width: 1440px) {
+
+        /*-----FIM DO HOME 1240-PX-----*/
+
+        .home_principal {
+            max-height: 550px;
+        }
+
+        .home_principal h1 {
+            width: 330px;
+            height: 380px;
+            font-size: 53px;
+            margin-right: 80px;
+        }
+
+        .home_principal img {
+            width: 550px;
+            height: 300px;
+        }
+
+        /*-----FIM DO HOME 1240-PX-----*/
+
+        /*-----COMECO SOBRE 1240-PX-----*/
+
+        .sobre {
+            max-height: 450px;
+        }
+
+        .sobre img {
+            width: 485px;
+            height: 260px;
+        }
+
+        .sobre li {
+            width: 550px;
+        }
+
+        /*-----FIM SOBRE 1024-PX*/
+
+        /*-----O QUE FAZEMOS 1024-PX-----*/
+
+        .o_oqf {
+            height: 1100px;
+        }
+
+        .parte_01 {
+            margin: 50px;
+        }
+
+        .parte_02 {
+            margin-left: 35px;
+        }
+    }
+
+    /*----- FIM O QUE FAZEMOS 1024-PX-----*/
+
+    @media screen and (max-width: 1154px) {
+        .contato_wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mapa {
+            margin-top: 35px;
+            padding: 0px;
+        }
+
+        .contato {
+            height: 870px;
+        }
+    }
+
+    /*-----NAV MOBILE-----*/
+
+    @media screen and (max-width: 768px) {
+        .menu_principal {
+            justify-content: space-between;
+            padding: 0px 55px;
+        }
+
+        .lista li {
+            margin-bottom: 70px;
+        }
+
+        .lista {
+            padding-top: 70px;
+            position: absolute;
+            top: 113px;
+            right: 0;
+            width: 55vw;
+            height: 90vh;
+            background-color: #001322;
+            flex-direction: column;
+            align-items: center;
+            transition: 0.6s;
+        }
+
+        .lista.active {
+            transform: translateX(0);
+        }
+
+        .mobile_menu {
+            display: block;
+            margin-left: 15px;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        .home_principal {
+            max-height: 457px;
+        }
+
+        .home_principal h1 {
+            width: 230px;
+            height: 280px;
+            font-size: 39px;
+            margin-right: 80px;
+        }
+
+        .home_principal img {
+            width: 350px;
+            height: 200px;
+        }
+
+        /* SOBRE */
+
+        .sobre {
+            max-height: 530px;
+        }
+
+        .titulo_sobre h2 {
+            font-size: 50px;
+        }
+
+        .corpo_sobre {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sobre img {
+            width: 300px;
+            height: 170px;
+            padding-bottom: 15px;
+        }
+
+        .corpo_sobre li {
+            font-size: 20px;
+        }
+
+        /* O QUE FAZEMOS */
+
+        .o_oqf {
+            height: 860px;
+        }
+
+        .titulo_oqf {
+            padding-bottom: 25px;
+        }
+
+        .titulo_oqf h2 {
+            font-size: 50px;
+        }
+
+        .parte_01 {
+            margin: 20px 55px;
+        }
+
+        .parte_01 img {
+            padding-left: 20px;
+        }
+
+        .texto_oqf_01 {
+            font-size: 12px;
+        }
+
+        .img_oqf_01 img {
+            height: 270px;
+            width: 340px;
+        }
+
+        .parte_02 img {
+            height: 240px;
+            width: 410px;
+            padding-right: 60px;
+        }
+
+        .texto_oqf_02 {
+            font-size: 12px;
+        }
+
+        /*-----FINAL OQF 1024-PX*/
+
+        /*------INICIO FOOTER-------*/
+        
+        .item-left {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .item-right {
+            padding: 0px 10px;
+        }
+
+        .item-right h2 {
+            text-align: center;
+        }
+
+        .container_footer img {
+            height: 150px;
+            width: 150px;
+            margin: 0px 30px;
+        }
+
+        /*-----FIM INICIO FOOTER*-----*/
+    }
+
+    @media screen and (max-width: 733px) {
+
+        .menu_principal {
+            justify-content: space-between;
+            padding: 0px 0px;
+        }
+
+        .corpo_home {
+            flex-direction: column;
+        }
+
+        .texto_home h1 {
+            height: 200px;
+            text-align: center;
+            font-size: 200%;
+            margin: 0px 0px 30px 0px ;
+        }
+
+        .img_home img {
+            width: 250px;
+            height: 146px;
+        }
+
+        .sobre{
+            min-height: 760px;
+        }
+
+        .sobre li {
+            width: 250px;
+            height: 150px;
+        }
+
+        .img_sobre img {
+            padding-bottom: 20px;
+        }
+
+        .titulo_portifolio h2{
+            font-size: 45px;
+        }
+
+        .portifolio {
+            height: 1650px;
+        }
+
+        .titulo_oqf h2{
+            font-size: 40px;
+        }
+
+        .o_oqf img {
+            width: 50px;
+            height: 35px;
+
+            position:absolute;
+		    left:50%;
+		    top:50%;
+		    margin-left:-1110px;
+		    margin-top:-1110px;
+        }
+
+        .corpo_oqf li{
+            padding-top: 10px;
+        }
+
+        .parte_02 {
+            padding-top: 20px;
+        }
+
+        .titulo_contato h2{
+            padding-bottom: 10px;
+        }
+
+        .mapa iframe {
+            width: 340px;
+            height: 345px;
+        }
+
+        .titulo_contato h2 {
+            font-size: 45px;
+        }
+
+        .contato_wrapper form {
+            width: 340px;
+            height: 345px;
+
+            margin: 0px ;
+        }
+
+        .contato_wrapper textarea, button{
+            max-width: 340px;
+            max-height: 105px;
+        }
+
+        .footer {
+            height: 500px;
+        }
+
+
+        .container_footer {
+            height: 500px;
+            flex-direction: column;
+        }
+
+        .item-left{
+            border: 0px solid;
+        }
+
+        .item-right{
+            border: 0px solid;
+        }
+
+        .container_footer{
+            display: flex;
+            order: 11;
+        }
+
+    }
+
+    @media screen and (max-width: 393px) {
+    
+        .o_oqf {
+            height: 1050px;
+        }
+
+        /* aaaa */
+
+        .contato {
+            height: 715px;
+        }
+
+        .titulo_contato {
+            padding-bottom: 20px;
+        }
+
+        .contato_wrapper form {
+            width: 270px;
+            height: 275px;
+
+            margin: 0px ;
+        }
+
+        .contato_wrapper textarea, button{
+            max-width: 270px;
+            max-height: 105px;
+        }
+
+        .mapa iframe {
+            width: 270px;
+            height: 275px;
+        }
+
+        /* aaaa */
+
+        .copyright {
+            font-size: 13px;
+        }
+
+    }
